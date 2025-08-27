@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Resume Showcase</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url('img.png') no-repeat center center/cover;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 60px;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      transition: 0.3s;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+
+    nav ul li a:hover {
+      background: #7e6c6c;
+      color: #000;
+    }
+
+    /* Landing Section */
+    .landing {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 100px 80px 50px;
+    }
+
+    .intro {
+      max-width: 50%;
+    }
+
+    .intro h1 {
+      font-size: 48px;
+      color: #796363;
+    }
+
+    .intro p {
+      margin: 20px 0;
+      font-size: 18px;
+      color: #332b2b;
+    }
+
+    /* Login Box */
+    .login-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+      width: 320px;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .login-box input:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 8px rgba(0,123,255,0.5);
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      background: #796363;
+      color: #000;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #b0938e;
+      transform: scale(1.05);
+    }
+
+    /* Fix Checkbox Alignment */
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #333;
+    }
+
+    .options a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .options a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">My Resume</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Landing Section -->
+  <section class="landing">
+    <div class="intro">
+      <h1>Welcome to My Digital Resume</h1>
+      <p>Explore my journey, skills, and projects in one place.  
+         This showcase is designed to give you a glimpse of my professional profile.</p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+        <div class="options">
+          <label class="remember">
+            <input type="checkbox"> Remember Me
+          </label>
+          <a href="#">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
